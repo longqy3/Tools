@@ -1,0 +1,18 @@
+Unity项目传到GitHub上:
+1.项目下复制.gitignore和.gitattributes(这个不知道有什么用)
+2.在项目文件夹下用Powershell执行后面命令
+3.根据GitHub上有没有创建该项目来区分步骤,因为Desktop没有这个识别功能了
+	有:需要在Powershell上用命令行推送
+	没有:直接用GitHub Desktop推送,Add local repository...(具体也在tools下有)
+4.Summary -> Publish repository
+
+
+1.	git init	
+	git lfs track "*.psd" "*.png" "*.jpg" "*.fbx" "*.asset" "*.unity" "*.prefab" "*.mp3" "*.wav"
+
+
+下面是提前建好仓的,没有仓直接用GitHub Desktop快一点
+2.	git add .
+	git commit -m "Initial commit"
+	git remote add origin (仓库地址)
+	git push -u origin master
